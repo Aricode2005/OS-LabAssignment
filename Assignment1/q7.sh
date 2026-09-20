@@ -21,7 +21,7 @@ if [ "$nocase_count" -gt 0 ] && [ "$nocase_count" -ne "$exact_count" ]; then
 fi
 
 if [ "$total_count" -gt "$exact_count" ]; then
-    echo "Notice: Partial matches do exist (these will be ignored during replacement)."
+    echo "Notice: Partial matches do exist."
 fi
 
 if [ "$exact_count" -gt 0 ]; then

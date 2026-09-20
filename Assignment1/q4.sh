@@ -9,6 +9,5 @@ find "$target_dir" -type d | while read -r dir; do
     count=$(find "$dir" -maxdepth 1 -type f | wc -l)
     echo "Directory: $dir -> Files: $count"
 done
-
 echo -e "\n(ii) Files created/modified within the past week:"
 find "$target_dir" -type f -mtime -7 -printf "%f\n"
